@@ -25,6 +25,7 @@ body	{font-family: "맑은 고딕" 돋움; font-size: 0.75em; color: #333;}
 }
 
 .search-box {
+	border:1px solid #19ce60;
 	width: 600px;
 	height: 52px;
 }
@@ -32,7 +33,7 @@ body	{font-family: "맑은 고딕" 돋움; font-size: 0.75em; color: #333;}
 .search-box input {
 	width: 450px;
 	height: 52px;
-	border: 2px solid #19ce60;
+	border: none;
 	border-radius: 2px;
 	outline: none;
 }  
@@ -52,13 +53,15 @@ body	{font-family: "맑은 고딕" 돋움; font-size: 0.75em; color: #333;}
 	width: 20px;
 	height: 12px;
 	background: #fff url(https://s.pstatic.net/static/www/img/uit/sp_dark_main_41bac0.png) no-repeat -43px -156px / 209px 177px;
+	margin: 15px 10px auto;
 }
 
-#dropdown {
+#dropdown { 
 	font-size: 0;
 	width: 10px;
     height: 5px;
     background: #fff url(https://s.pstatic.net/static/www/img/uit/sp_main_dba1af.png) no-repeat -408px -77px / 457px 434px;
+	margin: 15px 10px auto;
 }
 
 .search-box .btn-search button {
@@ -72,6 +75,7 @@ body	{font-family: "맑은 고딕" 돋움; font-size: 0.75em; color: #333;}
     vertical-align: center;
     margin: 10px auto;
     background: url(https://s.pstatic.net/static/www/img/uit/sp_main_dba1af.png) no-repeat -420px 0 / 457px 434px;
+    margin:10px 15px;
 }
 
 .search-box .btn-search {
@@ -80,6 +84,7 @@ body	{font-family: "맑은 고딕" 돋움; font-size: 0.75em; color: #333;}
     background: #19ce60;
 }
 
+
 </style>
 </head>
 <body>
@@ -87,7 +92,7 @@ body	{font-family: "맑은 고딕" 돋움; font-size: 0.75em; color: #333;}
 		<h1 class="logo">네이버</h1>
 		<div class="search-box">
 			<div class="btn-search">
-				<button>돋보기</button>
+				<button class="btn-search">돋보기</button>
 			</div>
 			<a href="#"  id="dropdown">드롭다운</a>
 			<a href="#"  id="keyboard">키보드</a>
