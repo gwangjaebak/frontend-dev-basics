@@ -16,3 +16,10 @@ MyObject.prototype.info = function() {
 var o1 = new MyObject("둘리", 10);
 o1.school = 'BIT ACADEMY';  //  오버라이드
 o1.info();
+
+// MyObject 객체 생성2
+var o2 = new MyObject("마이콜", 30);
+o2.info = function(){
+    console.log("비밀!");
+};
+o2.info();
