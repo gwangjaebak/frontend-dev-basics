@@ -1,5 +1,5 @@
 /**
- * Array 메소드(Array.prototype)
+ * Array 객체 메소드(Array.prototype.*) [타입은 오브젝트인데 어레이의 인스턴스다]
  */
 
 var colors = ['black', 'white', 'yellow'];
