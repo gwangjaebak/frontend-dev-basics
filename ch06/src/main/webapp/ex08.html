@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+window.addEventListener("load", function(){
+	var imgElement = document.createElement("img");
+	
+	imgElement.src = "https://img.animalplanet.co.kr/thumbnail/2020/09/06/2000/gg26ndx8m4q0mo60c11f.jpg";
+	imgElement.style.width = "500px";
+	imgElement.alt = "시바견";
+	imgElement.title = "시바?";
+	
+	setTimeout(function(){
+		document.body.appendChild(imgElement);
+	}, 2000);
+})
+</script>
+</head>
+<body>
+	<h1 id='h' data-no='10'>DOM(Document Object Model)</h1>
+	<h2>3. HTML Element 속성 조작하기1</h2>
+</body>
+</html>

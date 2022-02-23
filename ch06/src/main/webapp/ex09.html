@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+window.addEventListener("load", function(){
+	var imgElement = document.createElement("img");
+	
+	// (표준[prop o] + 비표준[prop x]) 속성(Attribute)을 읽고쓰기 위해서 setAtrribute/getAtrribute를 사용한다. 
+	imgElement.setAttribute("src", "https://img.animalplanet.co.kr/thumbnail/2020/09/06/2000/gg26ndx8m4q0mo60c11f.jpg");
+	imgElement.setAttribute("style", "width:500px");
+	imgElement.setAttribute("alt", "시바견");
+	imgElement.setAttribute("title", "커엽");			// 표준 속성
+	
+	imgElement["no"] = 10;							// property
+	imgElement.setAttribute("date-name", "gjbak");	// 비표준 속성: property x
+													// 사용할때는 data- prefix를 달아준다.
+	
+	setTimeout(function(){
+		document.body.appendChild(imgElement);
+		console.log(imgElement["no"] /* property */, imgElement.getAttribute("no")/* attribute */);
+		console.log(imgElement.alt, imgElement["data-name"], imgElement.getAttribute("data-name"));
+	}, 2000);
+})
+</script>
+</head>
+<body>
+	<h1>DOM(Document Object Model)</h1>
+	<h2>3. HTML Element 속성 조작하기2</h2>
+</body>
+</html>
