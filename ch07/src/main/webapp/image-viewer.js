@@ -1,0 +1,5 @@
+var imageView = {
+	init: function() {
+		
+	}	
+}
